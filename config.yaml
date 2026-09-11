@@ -1,0 +1,52 @@
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  splits_dir: data/splits
+  results_dir: results
+  checkpoint_dir: results/checkpoints
+
+datasets:
+  active_audio: musiccaps
+  max_tracks: null
+  seed: 42
+  train_fraction: 0.70
+  val_fraction: 0.15
+  num_tags: 20
+
+audio:
+  sample_rate: 22050
+  n_fft: 1024
+  hop_length: 512
+  n_mels: 64
+  segment_seconds: 2.0
+
+graph:
+  similarity_threshold: 0.70
+  max_nodes_per_track: 12
+
+text:
+  # Uses a Hugging Face encoder when locally cached or downloadable.
+  bert_model_name: distilbert-base-uncased
+  max_length: 64
+  freeze_bert_layers: 0
+
+model:
+  num_tags: 20
+  gnn_hidden_dim: 64
+  gnn_out_dim: 64
+  gnn_layers: 2
+  gnn_type: sage
+  gat_heads: 4
+  fusion_dim: 64
+  dropout: 0.25
+
+train:
+  seed: 42
+  device: cuda
+  batch_size: 16
+  epochs: 5
+  lr: 0.001
+  bert_lr: 0.0005
+  weight_decay: 0.0001
+  emotion_loss_weight: 0.0
+  contrastive_temperature: 0.07

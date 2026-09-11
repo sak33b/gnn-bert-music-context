@@ -1,0 +1,109 @@
+{
+  "bert": {
+    "macro_f1": 0.0,
+    "micro_f1": 0.0,
+    "auc_pr": 0.1382252812355369,
+    "example_predictions": [
+      {
+        "predicted_top5_tag_idx": [
+          0,
+          1,
+          10,
+          6,
+          2
+        ],
+        "true_tag_idx": [
+          1
+        ]
+      },
+      {
+        "predicted_top5_tag_idx": [
+          0,
+          1,
+          10,
+          6,
+          2
+        ],
+        "true_tag_idx": [
+          1,
+          7,
+          16
+        ]
+      },
+      {
+        "predicted_top5_tag_idx": [
+          0,
+          1,
+          10,
+          6,
+          2
+        ],
+        "true_tag_idx": [
+          0
+        ]
+      },
+      {
+        "predicted_top5_tag_idx": [
+          0,
+          1,
+          10,
+          6,
+          2
+        ],
+        "true_tag_idx": [
+          1
+        ]
+      },
+      {
+        "predicted_top5_tag_idx": [
+          0,
+          1,
+          10,
+          6,
+          2
+        ],
+        "true_tag_idx": [
+          2
+        ]
+      }
+    ]
+  },
+  "gnn": {
+    "macro_f1": 0.0,
+    "micro_f1": 0.0,
+    "auc_pr": 0.12472435826518373
+  },
+  "fusion_cross_attn": {
+    "macro_f1": 0.0,
+    "micro_f1": 0.0,
+    "auc_pr": 0.12712812968938556
+  },
+  "fusion_concat": {
+    "macro_f1": 0.0,
+    "micro_f1": 0.0,
+    "auc_pr": 0.13396263414309545
+  },
+  "fusion_gnn_only": {
+    "macro_f1": 0.0,
+    "micro_f1": 0.0,
+    "auc_pr": 0.1211039928519527
+  },
+  "fusion_bert_only": {
+    "macro_f1": 0.0,
+    "micro_f1": 0.0,
+    "auc_pr": 0.10700161446247439
+  },
+  "contrastive": {
+    "audio_to_caption_R@1": 0.0,
+    "audio_to_caption_R@5": 0.002583979396149516,
+    "audio_to_caption_R@10": 0.007751937955617905,
+    "caption_to_audio_R@1": 0.001291989698074758,
+    "caption_to_audio_R@5": 0.006459948141127825,
+    "caption_to_audio_R@10": 0.01291989628225565
+  },
+  "task2_cnn_baseline": {
+    "macro_f1": 0.0,
+    "micro_f1": 0.0,
+    "auc_pr": 0.09532291227783388
+  }
+}

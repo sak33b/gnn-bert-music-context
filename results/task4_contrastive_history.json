@@ -1,0 +1,57 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 2.775434420172092,
+    "val_audio_to_caption_R@1": 0.0,
+    "val_audio_to_caption_R@5": 0.006468305364251137,
+    "val_audio_to_caption_R@10": 0.012936610728502274,
+    "val_caption_to_audio_R@1": 0.0012936610728502274,
+    "val_caption_to_audio_R@5": 0.006468305364251137,
+    "val_caption_to_audio_R@10": 0.012936610728502274,
+    "val_val_info_nce": 2.7488938740321567
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.770121494225696,
+    "val_audio_to_caption_R@1": 0.0012936610728502274,
+    "val_audio_to_caption_R@5": 0.009055627509951591,
+    "val_audio_to_caption_R@10": 0.015523932874202728,
+    "val_caption_to_audio_R@1": 0.0012936610728502274,
+    "val_caption_to_audio_R@5": 0.006468305364251137,
+    "val_caption_to_audio_R@10": 0.012936610728502274,
+    "val_val_info_nce": 2.7489070673378144
+  },
+  {
+    "epoch": 3,
+    "train_loss": 2.7702297636892945,
+    "val_audio_to_caption_R@1": 0.0,
+    "val_audio_to_caption_R@5": 0.003880983218550682,
+    "val_audio_to_caption_R@10": 0.010349288582801819,
+    "val_caption_to_audio_R@1": 0.0012936610728502274,
+    "val_caption_to_audio_R@5": 0.006468305364251137,
+    "val_caption_to_audio_R@10": 0.012936610728502274,
+    "val_val_info_nce": 2.7488630377516454
+  },
+  {
+    "epoch": 4,
+    "train_loss": 2.7701091587016013,
+    "val_audio_to_caption_R@1": 0.0012936610728502274,
+    "val_audio_to_caption_R@5": 0.003880983218550682,
+    "val_audio_to_caption_R@10": 0.010349288582801819,
+    "val_caption_to_audio_R@1": 0.0012936610728502274,
+    "val_caption_to_audio_R@5": 0.006468305364251137,
+    "val_caption_to_audio_R@10": 0.012936610728502274,
+    "val_val_info_nce": 2.7488705819966843
+  },
+  {
+    "epoch": 5,
+    "train_loss": 2.7704051205542237,
+    "val_audio_to_caption_R@1": 0.0025873221457004547,
+    "val_audio_to_caption_R@5": 0.007761966437101364,
+    "val_audio_to_caption_R@10": 0.015523932874202728,
+    "val_caption_to_audio_R@1": 0.0012936610728502274,
+    "val_caption_to_audio_R@5": 0.006468305364251137,
+    "val_caption_to_audio_R@10": 0.012936610728502274,
+    "val_val_info_nce": 2.7488524256920326
+  }
+]

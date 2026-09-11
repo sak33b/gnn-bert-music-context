@@ -1,0 +1,45 @@
+[project]
+name = "gnn-bert-music-context"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shadman Sakeeb", email = "89086878+sak33b@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "datasets>=5.0.1",
+    "librosa>=0.10.1",
+    "matplotlib>=3.8.0",
+    "networkx>=3.2",
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "pyyaml>=6.0",
+    "reportlab>=5.0.0",
+    "scikit-learn>=1.4.0",
+    "scipy>=1.12.0",
+    "seaborn>=0.13.0",
+    "soundfile>=0.12.1",
+    "torch>=2.2.0",
+    "torch-geometric>=2.5.0",
+    "tqdm>=4.66.0",
+    "transformers>=4.40.0",
+    "yt-dlp>=2026.8.19",
+]
+
+[project.scripts]
+gnn-bert-music-context = "gnn_bert_music_context:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
+
+# Keep the CUDA-enabled PyTorch wheel selected on this Windows/NVIDIA project.
+# Without this explicit source, uv resolves the CPU wheel from PyPI.
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
